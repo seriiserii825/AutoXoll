@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BebasThin';
+    src: url('fonts/BebasThin.eot');
+    src: url('fonts/BebasThin.eot') format('embedded-opentype'),
+         url('fonts/BebasThin.woff2') format('woff2'),
+         url('fonts/BebasThin.woff') format('woff'),
+         url('fonts/BebasThin.ttf') format('truetype'),
+         url('fonts/BebasThin.svg#BebasThin') format('svg');
+}

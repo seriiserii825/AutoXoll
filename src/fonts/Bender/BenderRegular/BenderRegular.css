@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BenderRegular';
+    src: url('fonts/BenderRegular.eot');
+    src: url('fonts/BenderRegular.eot') format('embedded-opentype'),
+         url('fonts/BenderRegular.woff2') format('woff2'),
+         url('fonts/BenderRegular.woff') format('woff'),
+         url('fonts/BenderRegular.ttf') format('truetype'),
+         url('fonts/BenderRegular.svg#BenderRegular') format('svg');
+}

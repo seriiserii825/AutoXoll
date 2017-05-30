@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BenderItalic';
+    src: url('fonts/BenderItalic.eot');
+    src: url('fonts/BenderItalic.eot') format('embedded-opentype'),
+         url('fonts/BenderItalic.woff2') format('woff2'),
+         url('fonts/BenderItalic.woff') format('woff'),
+         url('fonts/BenderItalic.ttf') format('truetype'),
+         url('fonts/BenderItalic.svg#BenderItalic') format('svg');
+}
