@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BebasBook';
+    src: url('fonts/BebasBook.eot');
+    src: url('fonts/BebasBook.eot') format('embedded-opentype'),
+         url('fonts/BebasBook.woff2') format('woff2'),
+         url('fonts/BebasBook.woff') format('woff'),
+         url('fonts/BebasBook.ttf') format('truetype'),
+         url('fonts/BebasBook.svg#BebasBook') format('svg');
+}

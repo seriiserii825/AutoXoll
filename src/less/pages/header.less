@@ -1,0 +1,54 @@
+.header-main{
+	min-height: 668px;
+	background: url("../img/header-bg.jpg") top center;
+}
+.header-top{
+	padding-top: 24px;
+	padding-bottom: 20px;
+	.bebas;
+	background: rgba(0,0,0,.6);
+	border-bottom: 1px solid #636262;
+	&__info{
+		font-size: 22px;
+		&.right{
+			text-align: right;
+		}
+		&-text{
+			.inline-block;
+			margin-top: 0;
+			margin-left: 15px;
+		}
+		img{
+			width: 30px;
+			height: 50px;
+		}
+		span.red{
+			font-size: 32px;
+			color: @textRed;
+		}
+		.header-top__number{
+			font-size: 32px;
+			color: @textWhite;
+		}
+		.header-top__link{
+			.inline-block;
+			font-size: 22px;
+			color: @textWhite;
+			border-bottom: 1px dashed @bgWhite;
+			&:hover{
+				text-decoration: none;
+				border-bottom-color: transparent;
+			}
+		}
+	}
+}
+.logo-wrap{
+	position: relative;
+	width: 100%;
+	.logo{
+		position: absolute;
+		top: -15px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

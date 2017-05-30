@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'BenderBold';
-    src: url('fonts/BenderBold.eot');
-    src: url('fonts/BenderBold.eot') format('embedded-opentype'),
-         url('fonts/BenderBold.woff2') format('woff2'),
-         url('fonts/BenderBold.woff') format('woff'),
-         url('fonts/BenderBold.ttf') format('truetype'),
-         url('fonts/BenderBold.svg#BenderBold') format('svg');
-}

@@ -30,11 +30,10 @@ gulp.task('html', function () {
 
 gulp.task('css', function () {
     gulp.src('src/less/style.less') // Выберем наш style.less
-        //.pipe(sourcemaps.init())
-        .pipe(cached('src/less/style.less'))
+        .pipe(sourcemaps.init())
         .pipe(less()) // Скомпилируем
         .pipe(prefixer()) // Добавим вендорные префиксы
-        //.pipe(sourcemaps.write())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css/'))
         .pipe(browserSync.stream());
 });
@@ -71,7 +70,7 @@ gulp.task('cleanmin', function (cb) {
 gulp.task('min', ['cleanmin','cssmin', 'jsmin']);
 
 gulp.task('libs', function(){
-    gulp.src('src/libs/')
+    gulp.src('src/libs/**/*.*')
         .pipe(gulp.dest('build/libs/'))
 });
 
@@ -90,17 +89,7 @@ gulp.task('sprite', function () {
 gulp.task('img', function () {
     gulp.src('src/img/**/*.*') // Выберем наши картинки
         .pipe(newer('build/img'))
-        .pipe(image({
-            pngquant: true,
-            optipng: true,
-            zopflipng: true,
-            jpegRecompress: false,
-            jpegoptim: true,
-            mozjpeg: true,
-            gifsicle: true,
-            svgo: true,
-            concurrent: 10
-        }))
+        .pipe(imagemin())
         .pipe(gulp.dest('build/img/'));
     // Переместим в build
 });
@@ -135,8 +124,8 @@ gulp.task('build', [
 gulp.task('browser-sync', function () {
 
     browserSync.init({
-        proxy: "armata.loc/build",
-        notify: false
+        proxy: "AutoXoll/build",
+        notify: true
     });
 });
 
