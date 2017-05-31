@@ -1,5 +1,5 @@
 $(function () {
-	/*open popup
+	/*Services popup
 	===============================*/
 	$('#js-services .services__arrow-down').on('click', function(){
 		var ths = $(this);
@@ -17,6 +17,4 @@ $(function () {
 			ths.parent().addClass('active');
 		}
 	});
-    
-
 }());

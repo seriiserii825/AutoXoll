@@ -1,21 +1,31 @@
 .services{
+	.container{
+		position: relative;
+	}
 	.white{
 		margin-right: -6px;
-	}
-	.row{
-		position: relative;
 	}
 	/*services__item
 	===============================*/
 	&__item{
-		margin-bottom: 150px;
+		margin-bottom: 80px;
+		margin-left: 15px;
+		margin-right: 15px;
 		padding-top: 20px;
+		.inline-block;
+		width: 165px;
 		.bebas;
 		font-size: 20px;
 		text-align: center;
 		background-color: #1f1f1f;
 		border: 1px solid #262626;
 		transition: all .5s ease;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
 		&:hover,
 		&.active{
 			background: lighten(#1f1f1f, 5%);
@@ -62,18 +72,28 @@
 	.services__arrow-down.active::before{
 		background-position: -32px -80px;
 	}
+	.services__arrow-down.active::after{
+		content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 44%;
+    border: 8px solid transparent;
+    border-bottom-color: #454545;
+	}
 	/*services-popup
 	===============================*/
 	.services-popup{
 		position: absolute;
-		top: -134px;
+		left: 0;
+		bottom: 18px;
 		display: none;
 		padding: 10px 0;
-		max-width: 1140px;
+		width: 100%;
 		min-height: 20px;
 		text-align: center;
 		background: lighten(@bgGray, 5%);
 		border-radius: 4px;
+		z-index: 10;
 		li{
 			.inline-block(middle);
 			a{
@@ -95,6 +115,8 @@
 		display: table;
 	}
 }
+/*color
+===============================*/
 .services{
   &-popup.red{
     li{
