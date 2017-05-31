@@ -80,7 +80,7 @@ gulp.task('sprite', function () {
         cssName: 'sprite.less',
         cssFormat: 'less',
         algorithm: 'binary-tree',
-        padding: 10
+        padding: 20
     }));
     sprite.img.pipe(rename('sprite.png')).pipe(gulp.dest('build/img/')).pipe(browserSync.stream());
     sprite.css.pipe(gulp.dest('src/less/imports/')).pipe(browserSync.stream());
