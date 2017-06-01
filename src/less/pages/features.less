@@ -19,4 +19,24 @@
 			color: @textBlack;
 		}
 	}
+	&-content{
+		padding: 40px 0;
+		background: @bgGrayLight;
+		&__item{
+			margin-bottom: 60px;
+			img{
+				margin-bottom: 30px;
+				max-width: 100%;
+				border-top: 8px solid @bgRed;
+				cursor: pointer;
+			}
+			p{
+				padding: 0 6px;
+				.robotocondensed;
+				font-weight: bold;
+				line-height: 18px;
+				text-align: center;
+			}
+		}
+	}
 }

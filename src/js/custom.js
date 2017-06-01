@@ -17,4 +17,11 @@ $(function () {
 			ths.parent().addClass('active');
 		}
 	});
+
+	/*fancybox
+	===============================*/
+	$('[data-fancybox]').fancybox();
+
+
+
 }());
